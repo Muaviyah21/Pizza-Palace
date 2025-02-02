@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+HTML{
+    scroll-behavior: smooth;
+}
+#navbar ul {
+    display: flex;
+    position: absolute;
+    right: 260px;
+    top: 8px;
+    list-style: none;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bars {
+    background-color: black;
+    margin: 3px 3px;
+    height: 2px;
+    width: 30px
+}
+#burger{
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    cursor: pointer;
+    display: none;
+
+}
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-style: italic;
+    color: rgb(0, 80, 156);
+    font-size: 36px;
+    margin: 4px 25px
+}
+
+.sign {
+    display: flex;
+    position: absolute;
+    right: 165px;
+    top: 10px;
+    background-color: #4a4a4a;
+    color: white;
+    border-radius: 7px;
+    padding: 0.5px 13px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.theme {
+    display: flex;
+    position: absolute;
+    right: 46px;
+    top: 10px;
+    background-color: #4a4a4a;
+    color: white;
+    border-radius: 7px;
+    padding-left: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    margin: 12px;
+    color: black;
+    transition: 0.8s;
+    transition-duration: 2.5s;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: #4a4a4a;
+    border-radius: 5px;
+    padding: 2px 7px;
+}
+
+img::before {
+    width: 100%;
+    height: 100%;
+}
+
+#navbar::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+}
+
+.menu::before {
+    content: "";
+    background-color: #4a4a4a;
+    position: absolute;
+    width: 100%;
+    height: 3%;
+    margin-top: 54px;
+
+}
+
+#Home ul {
+    display: flex;
+    position: absolute;
+    left: 24%;
+    top: 12%;
+    list-style: none;
+}
+
+#Home ul li {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2px 7px;
+}
+@media (min-width:550px) {
+
+#Home ul li a {
+    text-decoration: none;
+    margin-left: 35px;
+    color: black;
+    transition: 0.8s;
+    transition-duration: 2.5s;
+    padding: 1px 6.5px;
+}
+
+#Home ul li a:hover::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 33px;
+    background-color: #4a4a4a;
+    z-index: -1;
+    border-radius: 11px 2px 80% 0;
+    padding: 5px 40px 0;
+
+}
+
+#Home ul li a:hover {
+    color: white;
+    padding: 5px 20px 0px;
+}
+}
+
+#Menu h1 {
+    margin-top: 40%;
+    display: none;
+}
+
+.box {
+    border: 2px solid whitesmoke;
+    width: 160px;
+    padding: 0px 28px;
+    margin: 17px 90px;
+    height: 273px;
+    border-radius: 15px;
+}
+#cow{
+    display: grid;
+    grid-template-columns: 30% 32% 20%;
+    margin-left: 7%;
+}
+.item-name {
+    margin-left: -20px;
+    margin-top: -3px;
+    font-weight: bold;
+}
+
+.box img {
+    width: 216px;
+    margin-left: -30px;
+    height: 100px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin-top: -2px;
+}
+
+.price {
+    color: rgb(84, 84, 218);
+    font: 12px sans-serif;
+    font-weight: 200;
+    margin-left: -15px;
+}
+
+#Pizza {
+    margin-top: 95px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+#Sides {
+    margin-top: 95px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+#Salad {
+    margin-top: 95px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+#Desserts {
+    margin-top: 95px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+#Beverages    {
+    margin-top: 95px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.box p {
+    font-size: 10px;
+    margin: 5px -24px;
+    color: rgb(211, 207, 207);
+}
+.Order-Now{
+    background-color: rgb(0, 80, 156);
+    color: white;
+    margin-top: 20px;
+    border-radius: 7px;
+    padding: 0.5px 50px;
+    margin-left: -13px;
+}
+#goat{
+    display: grid;
+    grid-template-columns: 30% 32% 20%;
+    margin-left: 7%;
+}
+#goat{
+    display: grid;
+    grid-template-columns: 30% 32% 20%;
+    margin-left: 7%;
+}
+#sheep{
+    display: grid;
+    grid-template-columns: 30% 32% 20%;
+    margin-left: 7%;
+}
+#camel{
+    display: grid;
+    grid-template-columns: 30% 32% 20%;
+    margin-left: 7%;
+}
+#yak{
+    display: grid;
+    grid-template-columns: 30% 32% 20%;
+    margin-left: 7%;
+}
+#parrot{
+    display: none;
+}
+#About-us {
+    display: flex;
+    flex-direction: column;
+}
+.About {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    font-size: 30px;
+    font-weight: 100;
+}
+.Closing-Words {
+    padding: 0.5px 80px;
+    margin-left: 0%;
+    margin-top: 5%;
+    font-size: 15.5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#contact {
+    position: relative;
+    padding: 13px 0px;
+}
+
+#Contact{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    margin: 50px 90px;
+}
+#Contact input{
+    margin: 2px 0px;
+}
+#sumbit{
+    background-color: rgb(0, 80, 156);
+    color: white;
+    position: relative;
+    top: 23px;
+    left: -80px;
+    padding: 0px 10px;
+    border-radius: 14px;
+}
+#link {
+    display: flex;
+    justify-content: space-evenly; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 117px; /* Set a height to center vertically in the viewport */
+    margin-left: 100px;
+}
+
+#link .image-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#link li {
+    margin: 0;
+}
+
+#link li img {
+    width: 50%;
+    margin: 0px -59px;
+    width: 51%;
+}
+#link ul li a{
+    align-items: center;
+    border-radius: 50%;
+    color: #fff!important;
+    display: flex;
+    font-size: 30px;
+    height: 45px;
+    justify-content: center;
+    text-decoration: none;
+    transition: all .3s;
+    width: 62px;
+}
+#link li:nth-child(2) img {
+    width: 45px;
+}
+#link li:nth-child(1) img {
+    width: 35px;
+}
+footer{
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+/* .menu-btn{
+    display: none;
+} */
+
