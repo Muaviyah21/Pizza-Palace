@@ -102,6 +102,310 @@
         width: 20%;
         display: block;
         position: fixed;
+
+        @media (max-width:840px) {
+            #navbar ul {
+                position: fixed;
+                top: 53px;
+                display: flex;
+                flex-direction: column;
+                background-color: #4a4a4a; 
+                height: 100%;
+                width: 28%;
+                left: 0;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+            }
+        
+            #navbar ul.show {
+                transform: translateX(0);
+            }
+        
+            .sign {
+                display: flex;
+            }
+        
+            /* #Home ul {
+                display: none;
+            } */
+        
+            #navbar ul li {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+        
+            #navbar ul li a {
+                font-size: 22px;
+                color: white;
+            }
+        
+            #burger {
+                display: block;
+            }
+        
+            .menu::before {
+                z-index: -1;
+            }
+        
+            .theme {
+                right: 97px;
+            }
+        
+            .sign {
+                right: 235px;
+            }
+        
+            #cow {
+                display: grid;
+                grid-template-columns: 29% 29% 18%;
+                margin-left: -11%;
+        
+            }
+        
+            #goat {
+                display: grid;
+                grid-template-columns: 29% 29% 18%;
+                margin-left: -11%;
+        
+            }
+        
+            #sheep {
+                display: grid;
+                grid-template-columns: 29% 29% 18%;
+                margin-left: -11%;
+        
+            }
+        
+            #camel {
+                display: grid;
+                grid-template-columns: 29% 29% 18%;
+                margin-left: -11%;
+            }
+        
+            #yak {
+                display: grid;
+                grid-template-columns: 29% 29% 18%;
+                margin-left: -11%;
+            }
+        
+        }
+        
+        @media (max-width:775px) {
+            #Home ul {
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                left: 0%;
+            }
+        
+            #Home ul li a {
+                font-size: 15px;
+            }
+            #Home ul li{
+                position: relative;
+                bottom: 10px;
+                margin: 0px -5px;
+                left: 115px;
+            
+            }
+        }
+        
+        @media (max-width: 690px) {
+            #cow {
+                display: grid;
+                grid-template-columns: 45% 29%;
+                margin-left: -11%;
+        
+            }
+        
+            #goat {
+                display: grid;
+                grid-template-columns: 45% 29%;
+                margin-left: -11%;
+        
+            }
+        
+            #sheep {
+                display: grid;
+                grid-template-columns: 45% 29%;
+                margin-left: -11%;
+        
+            }
+        
+            #camel {
+                display: grid;
+                grid-template-columns: 45% 29%;
+                margin-left: -11%;
+            }
+        
+            #yak {
+                display: grid;
+                grid-template-columns: 45% 29%;
+                margin-left: -11%;
+            }
+            #Home ul li{
+                position: relative;
+                    bottom: 60px;
+                    margin: 0px -9px;
+                    left: 58px;
+                }
+            
+        }
+        
+        @media (max-width:550px) {
+            .theme {
+                display: none;
+            }
+        
+            .theme.cat {
+                top: 73%;
+                left: 32px;
+                display: flex;
+                justify-content: center;
+                width: 27%;
+                position: fixed;
+            }
+        
+        
+            .sign {
+                display: none;
+            }
+        
+            .sign.animal {
+                position: fixed;
+                top: 64%;
+                left: 43px;
+                display: flex;
+                justify-content: center;
+                width: 20%;
+            }
+        
+            #Home ul li {
+                 padding: 0px 4px;
+                    width: 61px;
+                    margin: 0px 4px;
+                    position: relative;
+                    left: 85px;
+                    bottom: 66px;
+            }
+            
+        
+            #Home ul {
+                left: -6%;
+            }
+        }
+        
+        @media (max-width: 505px) {
+            #cow {
+                display: grid;
+                grid-template-columns: 50%;
+                margin-left: -11%;
+        
+            }
+        
+            #goat {
+                display: grid;
+                grid-template-columns: 50%;
+                margin-left: -11%;
+        
+            }
+        
+            #sheep {
+                display: grid;
+                grid-template-columns: 50%;
+                margin-left: -11%;
+        
+            }
+        
+            #camel {
+                display: grid;
+                grid-template-columns: 50%;
+                margin-left: -11%;
+            }
+        
+            #yak {
+                display: grid;
+                grid-template-columns: 50%;
+                margin-left: -11%;
+            }
+        
+            #sumbit {
+                left: 150px;
+            }
+        
+            .About {
+                display: flex;
+                justify-content: center;
+                margin-top: 32px;
+                font-size: 30px;
+                font-weight: 100;
+                width: 100%;
+                margin-left: 21px;
+            }
+        
+            .Closing-Words {
+                padding: 0.5px 75px;
+                margin-left: -15%;
+                margin-top: 5%;
+                font-size: 15.5px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                width: 83%;
+            }
+        
+            .sign.animal {
+                top: 50%;
+                width: 28%;
+                display: flex;
+                justify-content: center;
+                left: 3%;
+            }
+        
+            .theme.cat {
+                left: 3%;
+                display: flex;
+                justify-content: center;
+                width: 34%;
+                top: 60%;
+                align-items: center;
+            }
+        
+            #navbar ul {
+                width: 50%;
+            }
+        
+            #Home ul {
+                top: 7%;
+                z-index: -1;
+            }
+        
+            #link {
+                margin-left: 20px;
+            }
+        
+            #Home ul li {
+                    width: 60px;
+                    position: relative;
+                    bottom: 2px;
+                    margin: 2px 0px;
+                    left: 41px;
+                
+            }
+            #Home ul li a{
+                text-decoration: none;
+                margin: 12px;
+                color: black;
+                transition: 0.8s;
+                transition-duration: 3.5s;
+                margin-left: 45px;
+            }
+            #Home ul li a:active{
+                color: black;
+                background-color: #4a4a4a;
+                border-radius: 5px;
+            }
+        
+        }
         margin: -20% -20px;
     }
 
